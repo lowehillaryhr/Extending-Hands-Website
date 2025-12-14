@@ -4,20 +4,22 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Contact — Extending Hands</title>
+  <meta name="description" content="Contact Extending Hands to request support or start a partnership conversation." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="nav">
     <div class="container nav-inner">
-      <a class="brand" href="index.html">
+      <a class="brand" href="index.html" aria-label="Extending Hands Home">
         <div class="logo-mark" aria-hidden="true"></div>
         <div>
           <h1>Extending Hands</h1>
           <p class="tag">Faith-guided support • Practical resources • Renewed hope</p>
         </div>
       </a>
+
       <div class="nav-cta">
-        <a class="btn" href="get-involved.html">Get Involved</a>
+        <a class="btn" href="get-involved.html">Partner With Us</a>
         <a class="btn btn-primary" href="get-support.html">Get Support</a>
       </div>
     </div>
@@ -27,46 +29,101 @@
     <section class="page-hero">
       <span class="badge">Contact</span>
       <h2>Reach out — we’re here.</h2>
-      <p class="lead">Make this page your official contact hub.</p>
+      <p class="lead">
+        If you’re seeking support, the fastest way is to complete our Support Request Form.
+        If you prefer email, you can message us directly.
+      </p>
 
       <div class="card">
-        <h3 style="margin-top:0">Contact Options</h3>
+        <h3 style="margin-top:0">Fastest option: Support Request Form</h3>
         <p class="small">
-          Replace the placeholders below with the nonprofit’s official email and phone when ready.
+          This form helps us understand your needs and follow up with next steps as soon as possible.
+          Share only what you feel comfortable sharing.
         </p>
 
-        <div class="split" style="margin-top:14px">
-          <div class="card" style="box-shadow:none">
-            <span class="chip">Email</span>
-            <h4 style="margin-bottom:8px">Send a message</h4>
-            <a class="btn btn-primary" href="mailto:extendinghands@example.com">Email Extending Hands</a>
-            <p class="small" style="margin-top:10px">Update this email anytime.</p>
-          </div>
-
-          <div class="card" style="box-shadow:none">
-            <span class="chip">Form</span>
-            <h4 style="margin-bottom:8px">Request support / volunteer</h4>
-            <a class="btn" href="https://forms.google.com" target="_blank" rel="noreferrer">Open Google Forms</a>
-            <p class="small" style="margin-top:10px">
-              When you create your form, paste the direct form link here.
-            </p>
-          </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:14px">
+          <a class="btn btn-primary"
+             href="https://docs.google.com/forms/d/e/1FAIpQLSdHyE9lP-2IAzCKCKuRjxQ21q5ZZCgsCX_Zh6_fXz-NJQuyiQ/viewform"
+             target="_blank" rel="noreferrer">
+            Open Support Request Form
+          </a>
+          <a class="btn" href="get-support.html">View Support Page</a>
         </div>
 
         <div class="notice" style="margin-top:16px">
-          Want me to wire this to your real form + business email? Just paste the form link and the official email here.
+          <b>Safety note:</b> If you are in immediate danger or need urgent help, please contact local emergency services.
         </div>
-
       </div>
+
+      <div class="section" style="padding-top:22px">
+        <div class="split">
+          <div class="card">
+            <span class="chip">Email</span>
+            <h4 style="margin:10px 0 6px">Send a message</h4>
+            <p class="small" style="margin-top:0">
+              Use email if you have a general question or prefer to reach out directly.
+            </p>
+
+            <!-- Replace the email below with the nonprofit's real email when ready -->
+            <a class="btn btn-primary" href="mailto:extendinghands@example.com">
+              Email Extending Hands
+            </a>
+
+            <p class="small" style="margin-top:10px">
+              Tip: When you have the official email, replace <b>extendinghands@example.com</b> in this file.
+            </p>
+          </div>
+
+          <div class="card">
+            <span class="chip">Partnership</span>
+            <h4 style="margin:10px 0 6px">Partner with Extending Hands</h4>
+            <p class="small" style="margin-top:0">
+              Churches, organizations, and businesses — we’d love to explore collaboration that supports community stability.
+            </p>
+
+            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
+              <a class="btn" href="get-involved.html">Partner With Us</a>
+              <a class="btn btn-ghost"
+                 href="mailto:extendinghands@example.com?subject=Partnership%20Inquiry%20-%20Extending%20Hands">
+                Email About Partnership
+              </a>
+            </div>
+
+            <p class="small" style="margin-top:10px">
+              Once your official email is set, this button will route partnership inquiries there.
+            </p>
+          </div>
+        </div>
+      </div>
+
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <div class="fine">© <span id="year"></span> Extending Hands</div>
+    <div class="container footer-grid">
+      <div>
+        <b style="font-family:'Playfair Display',serif;font-size:1.15rem">Extending Hands</b>
+        <div class="fine">
+          Faith-guided support for individuals and families working toward stability and renewed hope.
+        </div>
+        <div class="fine">
+          © <span id="year"></span> Extending Hands. All rights reserved.
+        </div>
+      </div>
+
+      <div>
+        <div class="fine"><b>Quick Links</b></div>
+        <div class="fine" style="display:grid;gap:8px;margin-top:10px">
+          <a href="get-support.html">Get Support</a>
+          <a href="get-involved.html">Partner With Us</a>
+          <a href="index.html#services">Services</a>
+        </div>
+      </div>
     </div>
   </footer>
 
-  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
